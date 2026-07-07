@@ -21,6 +21,8 @@
       --accent-light: rgba(59, 130, 246, 0.16);
       --success: #22c55e;
       --success-light: rgba(34, 197, 94, 0.12);
+      --progress: #ffa600;
+      --progress-light: rgba(255, 166, 0, 0.12);
       --warn: #facc15;
       --warn-light: rgba(250, 204, 21, 0.12);
       --font-sans: 'Inter', sans-serif;
@@ -106,7 +108,7 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .hero-left {}
+  
 
     .hero-tag {
       display: inline-flex;
@@ -367,6 +369,12 @@
       border: 1px solid rgba(34, 197, 94, 0.35);
     }
 
+    .badge-progress {
+      background: var(--progress-light);
+      color: var(--progress);
+      border: 1px solid rgba(255, 166, 0, 0.35);
+    }
+
     .badge-wip {
       background: var(--warn-light);
       color: var(--warn);
@@ -580,7 +588,7 @@
     <!-- HERO -->
     <div class="hero">
       <div class="hero-left">
-        <div class="hero-tag">Recherche — alternance</div>
+        <div class="hero-tag">Alternant Bachelor 3 - Administration système et réseaux</div>
         <h1>Technicien<br>Systèmes et Réseaux</h1>
         <p class="hero-subtitle">
           Étudiant en BTS SIO option SISR, je me spécialise en infrastructure réseau, administration système et réseaux et la cybersécurité.
@@ -636,7 +644,7 @@
             <span class="tag">FHRP</span>
             <span class="tag">HA</span>
             <span class="tag">SNMP</span>
-            <span class="tag">Firewall</span>
+            <span class="tag">Stormshield</span>
             <span class="tag">VPN</span>
           </div>
         </div>
@@ -717,9 +725,10 @@
         <span class="tag">Active Directory</span>
         <span class="tag">GPO</span>
         <span class="tag">DFS</span>
+        <span class="tag">DHCP</span>
+        <span class="tag">DNS</span>
         <span class="tag">PowerShell</span>
         <span class="tag">Bash</span>
-        <span class="tag">GNS3</span>
       </div>
 
       <div class="project-links">
@@ -777,6 +786,13 @@
         <span class="tag">Perl</span>
         <span class="tag">Crontab</span>
       </div>
+    
+
+    <div class="project-links">
+      <a href="./doc-perl.pdf" class="btn btn-outline" target="_blank">
+        Voir la documentation
+      </a>
+      </div>
     </div>
 
     <div class="project-card">
@@ -799,9 +815,76 @@
         <span class="tag">Automatisation</span>
         <span class="tag">SSH</span>
       </div>
+      
+    <div class="project-links">
+      <a href="./doc_ssh.pdf" class="btn btn-outline" target="_blank">
+        Voir la documentation
+      </a>
+      </div>
   </div>
-</div>
 
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-num">Projet 05</span>
+        <span class="badge badge-done">Terminé</span>
+      </div>
+
+      <h3>Projet - Perso</h3>
+      <h3>Supervision réseaux redondantes avec Centreon</h3>
+
+      <p>
+        Déploiement d'une infrastructure AD multi-sites : contrôleurs de domaine redondants,
+        GPO de sécurité, DFS, DNS/DHCP centralisé. Mise en place d’une solution GLPI reliée
+        à l’annuaire LDAP afin de centraliser la gestion du parc informatique et des utilisateurs.
+      </p>
+
+      <div class="tags" style="margin-top:1rem">
+        <span class="tag">Centreon</span>
+        <span class="tag">Redondance</span>
+        <span class="tag">SNMP</span>
+        <span class="tag">Linux</span>
+        <span class="tag">Bash</span>
+
+      </div>
+
+      <div class="project-links">
+        <a href="./doc_snmp_ha.pdf" class="btn btn-outline" target="_blank">
+          Voir la documentation
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-num">Projet 06</span>
+        <span class="badge badge-progress">En cours</span>
+      </div>
+
+      <h3>Projet - Perso</h3>
+      <h3>AD Redondant GLPI - Supervision Centreon - Serveur WEB redondant </h3>
+
+      <p>
+        Déploiement d'une infrastructure AD multi-sites : contrôleurs de domaine redondants,
+        GPO de sécurité, DFS, DNS/DHCP centralisé. Mise en place d’une solution GLPI reliée
+        à l’annuaire LDAP afin de centraliser la gestion du parc informatique et des utilisateurs. Supervisé à l'aide de Centreon, le tout est hébergé sur un serveur WEB redondant pour assurer la disponibilité des services.
+      </p>
+
+      <div class="tags" style="margin-top:1rem">
+        <span class="tag">Active Directory</span>
+        <span class="tag">PowerShell</span>
+        <span class="tag">Supervision</span>
+        <span class="tag">HA</span>
+        <span class="tag">Mikrotik</span>
+
+      </div>
+
+      <div class="project-links">
+        <a href="./doc_snmp_ha.pdf" class="btn btn-outline" target="_blank">
+          Voir la documentation
+        </a>
+      </div>
+    </div>
 
 
     <!-- PARCOURS -->
